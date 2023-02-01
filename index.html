@@ -5,11 +5,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/style.css" rel="stylesheet">
-    <script type="text/javascript" src="js/script.js"></script>
+    <!-- <script type="text/javascript" src="js/script.js"></script> -->
+    <script src="js/script.js" defer></script>
     <title>Rock Paper Scissors</title>
 </head>
 <body>
-    <h1>Welcome to the Slaughter Party!</h1>
-    <img src="img/hi.jpg">
+    <h1 class="page-title">Rock Paper Scissors Strikes Back!</h1>
+    <div class="score-container">
+        <div class="player-container">
+            <div class="player-text">Player:</div>
+            <div class="player-score">3</div>
+        </div>
+        <div class="computer-container">
+            <div class="computer-text">Computer:</div>
+            <div class="computer-score">2</div>
+        </div>
+    </div>
+    
+    <div class="pick-container">
+        <div>Player's Pick
+            <div class="player-pick">Rock</div>
+        </div>
+        <div>Computer's Pick
+            <div class="computer-pick">Paper</div>
+        </div>
+    </div>
+
+    <h2 class="choose-text">Choose your pick:</h2>
+
+    <div class="button-container">
+        <button class="rock-button" role="button">Rock</button>
+        <button class="paper-button" role="button">Paper</button>
+        <button class="scissors-button" role="button">Scissors</button>
+    </div>
+
+    <h2 class="game-result">a</h2>
+    <div class="retry">
+        <button class="retry-button">Retry</button>
+    </div>
 </body>
 </html>

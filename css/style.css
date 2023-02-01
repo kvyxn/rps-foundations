@@ -1,6 +1,83 @@
 body {
-    background-color: #252323;
+    background-color: #212129;
     color: #A39C8F;
-    font-size: 16px;
+    height: 95vh;
+    font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,"Helvetica Neue",sans-serif;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: ; */
+}
+.page-title, .choose-text, .game-result {
     text-align: center;
+}
+
+.score-container, .player-container, .computer-container {
+    display: flex;
+    font-size: 20px;
+}
+.score-container {
+    justify-content: center;
+    align-items: center;
+}
+
+.player-container, .computer-container {
+    width: 200px;
+    justify-content: space-evenly;
+}
+
+.pick-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    text-align: center;
+}
+
+.player-pick, .computer-pick {
+    width: 200px;
+    margin-top: 10px;
+}
+
+.score-container, .pick-container, .button-container {
+    height: 100px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    gap: 20px;
+}
+
+button {
+    background-color: transparent;
+    border: 2px solid #4c5265;
+    border-radius: 8px;
+    height: 50px;
+    width: 150px;
+    color: #4c5265;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    outline: none;
+    text-decoration: none;
+    touch-action: manipulation;
+    transition: box-shadow .2s,-ms-transform .1s,-webkit-transform .1s,transform .1s;
+}
+
+button:active {
+    background-color: #323949;
+    color: #212129;
+    border-color: #212129;
+    transform: scale(.95);
+}
+
+.retry-button {
+    height: 45px;
+    opacity: 0%;
+}
+
+.retry {
+    display: flex;
+    justify-content: center;
 }
